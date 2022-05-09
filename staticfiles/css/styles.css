@@ -1,0 +1,13 @@
+body {
+    font-size: 8pt;
+}
+
+#judul {
+    font-size: 18pt; !important;
+    font-weight: bold;!important;
+}
+
+#participant {
+    font-size: 8pt;
+!important;
+}
