@@ -27,6 +27,7 @@ def export_pdf(request):
     result = HTML(string=html_string, base_url=request.build_absolute_uri()).render(stylesheets=[
         settings.STATIC_ROOT / 'bootstrap/css/bootstrap.min.css',
         settings.STATIC_ROOT / 'css/styles.css',
+        settings.STATIC_ROOT / 'css/Open Sans.css',
     ]).write_pdf()
     with tempfile.NamedTemporaryFile(delete=True) as output:
         output.write(result)

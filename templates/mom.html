@@ -19,7 +19,7 @@
     </style>
 </head>
 
-<body>
+<body style="font-family: 'Open Sans', sans-serif;">
 <!-- Start: Header -->
 <section>
     <div>
@@ -44,7 +44,8 @@
                             <tbody>
                             <tr>
                                 <td>Date/Time</td>
-                                <td>{{ venue.tanggal|date:"l, d F Y" }} / {{ venue.waktu|time:"G:i A" }}</td>
+                                <td>{{ venue.tanggal|date:"M d, Y" }} / {{ venue.waktu|time:"G:i A" }}</td>
+{#                                <td>{{ venue.tanggal|date:"l, d F Y" }} / {{ venue.waktu|time:"G:i A" }}</td>#}
                             </tr>
                             <tr>
                                 <td>Notulen</td>
